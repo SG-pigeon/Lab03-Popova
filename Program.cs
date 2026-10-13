@@ -1,1 +1,170 @@
-﻿Console.WriteLine("Hello, World!");
+﻿// Console.WriteLine("Банковский счёт");
+
+// double balance = 1000;
+// Console.WriteLine($"Начальный баланс: {balance}");
+
+// balance += 500; //пополнение
+// System.Console.WriteLine($"После пополнения на 500: {balance}");
+
+// balance -= 200; //покупка
+// System.Console.WriteLine($"После покупки на 200: {balance}");
+
+// balance *= 1.05; //начисление 5%
+// System.Console.WriteLine($"После начисления 5%: {balance}");
+
+// balance /= 2; //разделили счёт пополам с партнёром
+// System.Console.WriteLine($"После деления пополам: {balance}");
+
+// System.Console.WriteLine();
+// System.Console.WriteLine("Постфикс vs префикс");
+
+// int lessonNumber = 1;
+// System.Console.WriteLine($"lessonNumber++  выводит: {lessonNumber++}");
+// System.Console.WriteLine($"После этого lessonNumber = {lessonNumber}");
+
+// int weekNumber = 1;
+// System.Console.WriteLine($"++weekNumber  выводит: {++weekNumber}");
+// System.Console.WriteLine($"После этого weekNumber = {weekNumber}");
+
+// System.Console.WriteLine();
+// System.Console.WriteLine("Практическая ловушка");
+
+// int attempts = 0;
+// System.Console.WriteLine($"Попытка №{++attempts}");
+// System.Console.WriteLine($"Попытка №{++attempts}");
+// System.Console.WriteLine($"Всего попыток: {attempts}");
+
+// System.Console.WriteLine();
+// System.Console.WriteLine("Операторы сравнения");
+
+// double myGrade = 4.6;
+// double passingGrade = 4.0;
+// int myAge = 20;
+// int votingAge = 18;
+// bool isPassing = myGrade >= passingGrade;
+// bool isExactAge = myAge == votingAge;
+// bool canVote = myAge >= votingAge;
+// bool isNotFiling = myGrade != 2.0;
+// System.Console.WriteLine($"Балл {myGrade} >= {passingGrade}: {isPassing}");
+// System.Console.WriteLine($"Возраст {myAge} == {votingAge}: {isExactAge}");
+// System.Console.WriteLine($"Возраст {myAge} >= {votingAge} (может голосовать): {canVote}");
+// System.Console.WriteLine($"Балл {myGrade} != 2.0 (не двойка): {isNotFiling}");
+
+// System.Console.WriteLine();
+// System.Console.WriteLine("Логические операторы");
+
+// bool hasPassingGrade = true;
+// bool hasAttendance = false;
+// bool hasDebt = true;
+
+// bool canGetScholarShip = hasPassingGrade && hasAttendance;
+// bool canRetakeExam = hasPassingGrade || hasAttendance;
+// bool isDebtFree = !hasDebt;
+// System.Console.WriteLine($"Может получить стипендию (оценка И посещаемость): {canGetScholarShip}");
+// System.Console.WriteLine($"Может пересдать(оценка ИЛИ посещаемость): {canRetakeExam}");
+// System.Console.WriteLine($"Нет долгов: {isDebtFree}");
+
+// System.Console.WriteLine();
+// System.Console.WriteLine("Короткое замыкание");
+// bool CheckAndPrint(string label, bool value)
+// {
+//     System.Console.WriteLine($" Вычисляется: {label}");
+//     return value;
+// }
+// System.Console.WriteLine("Проверяем && (первый операнд false):");
+// bool resultAnd = CheckAndPrint("A", false) && CheckAndPrint("B", true);
+// System.Console.WriteLine($"Результат: {resultAnd}");
+
+// System.Console.WriteLine();
+// System.Console.WriteLine("Проверяем || (первый операнд true):");
+// bool resultOr = CheckAndPrint("C", true) || CheckAndPrint("D", false);
+// System.Console.WriteLine($"Результат: {resultOr}");
+
+// System.Console.WriteLine();
+// System.Console.WriteLine("Приоритет операций");
+
+// int resultNoParens = 2 + 3 * 4;
+// int resultWithParens = (2 + 3) * 4;
+// System.Console.WriteLine($"2 + 3 * 4    = {resultNoParens}");
+// System.Console.WriteLine($"(2 + 3) * 4  = {resultWithParens}");
+
+// bool logicResult = 5 > 3 && 2 < 4 || false;
+// bool logicResultParens = (5 > 3 && 2 < 4) || false;
+// System.Console.WriteLine($"5 > 3 && 2 < 4 || false  = {logicResult}");
+// System.Console.WriteLine($"(5 > 3 && 2 < 4) || false    = {logicResultParens}");
+
+// Console.WriteLine();
+// Console.WriteLine("Приёмная комиссия");
+
+// Console.WriteLine("Введите средний балл аттестата");
+// double averageGrade = double.Parse(Console.ReadLine());
+
+// Console.WriteLine("Введите баллы за экзамен (0-100): ");
+// int examScore = int.Parse(Console.ReadLine());
+
+// Console.WriteLine("Есть льгота? (1 - да, 0 - нет):");
+// int benefitInput = int.Parse(Console.ReadLine());
+
+// bool hasGoodCertificate = averageGrade >= 4.0;
+// bool hasGoodExam = examScore >= 60;
+// bool hasBenefit = benefitInput == 1;
+// bool isEligibleByRules = (hasGoodCertificate && hasGoodExam) || hasBenefit;
+// double totalScore = averageGrade * 10;
+// totalScore += examScore;
+
+// Console.WriteLine();
+// Console.WriteLine("Результат");
+// Console.WriteLine($"Хороший аттестат (>= 4.0): {hasGoodCertificate}");
+// Console.WriteLine($"Хороший экзамен (>= 60): {hasGoodExam}");
+// Console.WriteLine($"Льгота: {hasBenefit}");
+// Console.WriteLine($"Проходит по правилам: {isEligibleByRules}");
+// Console.WriteLine($"Итоговый балл: {totalScore}");
+
+// Console.Write("Введите целое число: ");
+// int number = int.Parse(Console.ReadLine()!);
+
+// bool isEven = number % 2 == 0;
+
+// Console.WriteLine($"Число чётное: {isEven}");
+
+// int a = 4;
+// int postResult = a++ * 2;
+
+// Console.WriteLine($"a++ * 2 = {postResult}");
+// Console.WriteLine($"После выражения a = {a}");
+
+// int b = 4;
+// int preResult = ++b * 2;
+
+// Console.WriteLine($"++b * 2 = {preResult}");
+// Console.WriteLine($"После выражения b = {b}");
+
+// int c = 2;
+// int mixedResult = c++ + ++c;
+
+// Console.WriteLine($"c++ + ++c = {mixedResult}");
+// Console.WriteLine($"После выражения c = {c}");
+
+// Console.Write("Введите сумму покупки: ");
+// double purchaseAmount = double.Parse(Console.ReadLine()!);
+
+// Console.Write("Есть карта постоянного клиента? (1 — да, 0 — нет): ");
+// int cardInput = int.Parse(Console.ReadLine()!);
+
+// Console.Write("Введите количество товаров в чеке: ");
+// int productCount = int.Parse(Console.ReadLine()!);
+
+// bool hasLoyaltyCard = cardInput == 1;
+// bool amountCondition = purchaseAmount >= 3000;
+// bool productCondition = productCount >= 3;
+// bool amountAndProductsCondition = amountCondition && productCondition;
+
+// bool eligibleForDiscount = amountAndProductsCondition || hasLoyaltyCard;
+
+// Console.WriteLine();
+// Console.WriteLine("Результат расчёта скидки");
+// Console.WriteLine($"Сумма покупки >= 3000: {amountCondition}");
+// Console.WriteLine($"Количество товаров >= 3: {productCondition}");
+// Console.WriteLine($"Сумма >= 3000 И товаров >= 3: {amountAndProductsCondition}");
+// Console.WriteLine($"Есть карта клиента: {hasLoyaltyCard}");
+// Console.WriteLine($"Право на скидку: {eligibleForDiscount}");
